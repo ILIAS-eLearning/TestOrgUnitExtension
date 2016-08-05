@@ -1,0 +1,17 @@
+obj_xsre#:#Simple Report
+objs_xsre#:#Simple Reports
+obj_xsre_duplicate#:#Copy
+objs_xsre_duplicate#:#Copy Simple Report
+obj_xsre_select#:#Select Simple Report
+xsre_add#:#Add Simple Report
+xsre_new#:#Add New Simple Report
+xsre_read#:#Read access to Simple Report
+xsre_write#:#Edit Simple Report
+xsre_delete#:#Delete Simple Report
+xsre_visible#:#Simple Report is visible
+xsre_edit_permission#:#Change permission settings
+crs_create_xsre#:#Create Simple Report
+grp_create_xsre#:#Create Simple Report
+fold_create_xsre#:#Create Simple Report
+root_create_xsre#:#Create Simple Report
+cat_create_xsre#:#Create Simple Report
