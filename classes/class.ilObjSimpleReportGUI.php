@@ -42,10 +42,12 @@ class ilObjSimpleReportGUI extends ilOrgUnitExtensionGUI {
 	protected function show() {
 		global $tpl;
 
-		$sups = $this->object->getMySuperiors(true);
-		$emps = $this->object->getMyEmployees(true);
+		// Object Org Unit
 		$html = "<h3>Rekursiv from {$this->object->getOrgUnit()->getTitle()}:</h3><hr>superiors:<ul>";
 
+		// Superiors and employees
+		$sups = $this->object->getSuperiors(true);
+		$emps = $this->object->getEmployees(true);
 		foreach($sups as $supId) {
 			$user = new ilObjUser($supId);
 			$html .= "<li>{$user->getPublicName()}</li>";
@@ -61,8 +63,19 @@ class ilObjSimpleReportGUI extends ilOrgUnitExtensionGUI {
 
 		$html .= "</ul>";
 
-		$tpl->setContent($html);
+		// Path
+		$html .= "<hr /> Path <br />".implode(" > ", $this->object->getOrgUnitPathTitles());
+		$html .= "<hr />";
 
+		// Subtree
+		$subtree = $this->object->getOrgUnitSubtree(true, "orgu");
+		$html .= "Subtree: <br /><ul>";
+		foreach ($subtree as $item) {
+			$html .= "<li>".$item['title']."</li>";
+		}
+		$html .= "</ul>";
+
+		$tpl->setContent($html);
 	}
 
 	function getStandardCmd() {
