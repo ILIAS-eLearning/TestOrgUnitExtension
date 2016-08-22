@@ -2,7 +2,7 @@
 
 require_once "Modules/OrgUnit/classes/Extension/class.ilOrgUnitExtensionAccess.php";
 
-class ilObjSimpleReportAccess extends ilOrgUnitExtensionAccess {
+class ilObjTestOrgUnitExtensionAccess extends ilOrgUnitExtensionAccess {
 	/**
 	 * Checks wether a user may invoke a command or not
 	 * (this method is called by ilAccessHandler::checkAccess)

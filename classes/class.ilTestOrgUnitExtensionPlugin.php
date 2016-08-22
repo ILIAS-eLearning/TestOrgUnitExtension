@@ -2,7 +2,7 @@
 
 require_once "Modules/OrgUnit/classes/Extension/class.ilOrgUnitExtensionPlugin.php";
 
-class ilSimpleReportPlugin extends ilOrgUnitExtensionPlugin {
+class ilTestOrgUnitExtensionPlugin extends ilOrgUnitExtensionPlugin {
 
 	/**
 	 * Get Plugin Name. Must be same as in class name il<Name>Plugin
@@ -13,7 +13,7 @@ class ilSimpleReportPlugin extends ilOrgUnitExtensionPlugin {
 	 * @return    string    Plugin Name
 	 */
 	function getPluginName() {
-		return "SimpleReport";
+		return "TestOrgUnitExtension";
 	}
 
 	protected function uninstallCustom() {

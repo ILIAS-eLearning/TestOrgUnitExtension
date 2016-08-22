@@ -3,14 +3,14 @@
 require_once "Modules/OrgUnit/classes/Extension/class.ilOrgUnitExtensionListGUI.php";
 
 /**
- * Class ilObjSimpleReportListGUI
+ * Class ilObjTestOrgUnitExtensionListGUI
  *
  * @author Oskar Truffer <ot@studer-raimann.ch>
  */
-class ilObjSimpleReportListGUI extends ilOrgUnitExtensionListGUI {
+class ilObjTestOrgUnitExtensionListGUI extends ilOrgUnitExtensionListGUI {
 
 	function getGuiClass() {
-		return "ilObjSimpleReportGUI";
+		return "ilObjTestOrgUnitExtensionGUI";
 	}
 
 	/**

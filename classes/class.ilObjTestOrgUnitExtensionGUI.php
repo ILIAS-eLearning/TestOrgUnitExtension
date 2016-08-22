@@ -5,13 +5,13 @@ require_once "Modules/OrgUnit/classes/Extension/class.ilOrgUnitExtensionGUI.php"
 /**
  * User Interface class for example repository object.
  * ...
- * @ilCtrl_isCalledBy ilObjSimpleReportGUI: ilRepositoryGUI, ilAdministrationGUI, ilObjPluginDispatchGUI
- * @ilCtrl_Calls ilObjSimpleReportGUI: ilPermissionGUI, ilInfoScreenGUI, ilObjectCopyGUI, ilCommonActionDispatcherGUI
+ * @ilCtrl_isCalledBy ilObjTestOrgUnitExtensionGUI: ilRepositoryGUI, ilAdministrationGUI, ilObjPluginDispatchGUI
+ * @ilCtrl_Calls ilObjTestOrgUnitExtensionGUI: ilPermissionGUI, ilInfoScreenGUI, ilObjectCopyGUI, ilCommonActionDispatcherGUI
  */
-class ilObjSimpleReportGUI extends ilOrgUnitExtensionGUI {
+class ilObjTestOrgUnitExtensionGUI extends ilOrgUnitExtensionGUI {
 
 	/**
-	 * @var ilObjSimpleReport
+	 * @var ilObjTestOrgUnitExtension
 	 */
 	public $object;
 
